@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    background: rgba(90, 79, 173, 0.76);
+    color: silver;
+    font-size: 35px;
+    text-shadow: black 1px 2px 10px;
+    border-radius: 15px;
+    text-decoration: underline;
+    width: 70%;
+}
+body{
+    background: rgba(102, 205, 170, .5);
+}
+
+.main{
+    display: flex;
+}
+
+.player1{
+    border: 3px solid black;
+    float: left;
+    width: 33%;
+    height: 250px;
+    text-align: center;
+    margin: 3px;
+    background: lightgrey;
+    color: goldenrod;
+    border-radius: 5px;
+}
+
+.changes{
+    border: 3px solid saddlebrown;
+    width: 33%;
+    height: 200px;
+    align-items: center;
+    margin: auto 25px;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    background: tan;
+    padding: 5px;
+}
+
+.player2{
+    float: right;
+    border: 3px solid black;
+    width: 33%;
+    height: 250px;
+    text-align: center;
+    margin: 3px;
+    background: lightgrey;
+    color: indigo;
+    border-radius: 5px;
+}
+
+.p1buttons{
+    flex-direction: column;
+}
+.bothbuttons{
+
+    flex-direction: column;
+}
+.p2buttons{
+
+    flex-direction: column;
+}
+
+.changes .box{
+    width: 50%;
+    height: 40px;
+}
+
+.gabu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background: goldenrod;
+}
+
+button{
+    width: 115px;
+    height: 40px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+    border: 2px solid white;
+}
+
+p{
+    font-size: 50px;
+    font-family: 'Audiowide', cursive;
+    color: lightsteelblue;
+    background: black;
+    width: 75%;
+    margin-left: 50px;
+}
+
+.p1add, .addboth, .p2add{
+    background: rgba(0, 128, 0, 0.692);
+}
+
+.p1sub, .subboth, .p2sub{
+    background: rgba(255, 0, 0, 0.664);
+}
+
+h2{
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+}
+
+.center-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    background: white;
+    font-family: 'Black Ops One', cursive;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.center-header{
+    display: flex;
+    justify-content: center;
+}
