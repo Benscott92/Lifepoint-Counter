@@ -5,7 +5,11 @@ header{
     text-align: center;
     border: 3px solid black;
     margin-bottom: 20px;
-    background: rgba(90, 79, 173, 0.76);
+    /* background: rgba(90, 79, 173, 0.76); */
+    background-image: url(https://i.redd.it/ugw3kgxukeu11.jpg);
+    background-size: stretch;
+    background-position: center;
+    background-repeat: no-repeat;
     color: silver;
     font-size: 35px;
     text-shadow: black 1px 2px 10px;
@@ -14,7 +18,9 @@ header{
     width: 70%;
 }
 body{
-    background: rgba(102, 205, 170, .5);
+    /* background: rgba(102, 205, 170, .5); */
+    background-image: url(https://wallpapercave.com/wp/wp2931604.jpg);
+    background-size: contain;
 }
 
 .main{
@@ -22,15 +28,18 @@ body{
 }
 
 .player1{
-    border: 3px solid black;
+    border: 5px solid goldenrod;
     float: left;
     width: 33%;
     height: 250px;
     text-align: center;
     margin: 3px;
-    background: lightgrey;
+    /* background: lightgrey; */
+    background-image: url(https://ak.picdn.net/shutterstock/videos/1014989767/thumb/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: goldenrod;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .changes{
@@ -44,26 +53,31 @@ body{
 .buttons{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 50%;
-    background: tan;
+    background: goldenrod;
     padding: 5px;
 }
 
 .player2{
     float: right;
-    border: 3px solid black;
+    border: 5px solid dodgerblue;
     width: 33%;
     height: 250px;
     text-align: center;
     margin: 3px;
-    background: lightgrey;
-    color: indigo;
-    border-radius: 5px;
+    /* background: lightgrey; */
+    background-image: url(https://ak.picdn.net/shutterstock/videos/1014989767/thumb/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: dodgerblue;
+    border-radius: 15px;
 }
 
 .p1buttons{
     flex-direction: column;
 }
+
 .bothbuttons{
 
     flex-direction: column;
@@ -85,14 +99,13 @@ body{
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid black;
-    background: goldenrod;
+    background: dodgerblue;
 }
 
 button{
-    width: 115px;
+    width: 75%;
     height: 40px;
-    margin-left: 30px;
-    margin-bottom: 5px;
+    margin: 2px 20px;
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
     font-size: larger;
@@ -103,9 +116,10 @@ p{
     font-size: 50px;
     font-family: 'Audiowide', cursive;
     color: lightsteelblue;
-    background: black;
     width: 75%;
     margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 0px;
 }
 
 .p1add, .addboth, .p2add{
@@ -119,6 +133,8 @@ p{
 h2{
     font-family: 'Black Ops One', cursive;
     font-size: 40px;
+    text-decoration: underline;
+    margin-top: 0px;
 }
 
 .center-footer{
@@ -136,6 +152,7 @@ h2{
     font-family: 'Black Ops One', cursive;
     padding: 10px 0px;
     border-radius: 10px;
+    border: 5px solid grey;
 }
 
 .reset{
@@ -143,8 +160,75 @@ h2{
     justify-content: center;
     margin-top: 15px;
 }
+.reset-button{
+    width: 15%;
+    border: 3px solid grey;
+}
 
 .center-header{
     display: flex;
     justify-content: center;
+}
+input{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        width: 100%;
+        border-radius: 0px;font-size: medium;
+        margin: 0px;
+    }
+    .center-header{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .changes{
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        margin: 0;
+        height: min-content;
+    }
+
+    button{
+        font-size: small;
+        margin: auto;
+        height: fit-content;
+    }
+    .player1{
+        height: 75px;
+        width: 50%;
+
+    }
+
+    .player2{
+        width: 50%;
+        height: 75px;
+    }
+    .footer{
+        font-size: medium;
+        position: absolute;
+        top: 45%;
+    }
+    .reset{
+        position: absolute;
+        top: 75%;
+        width: 100%;
+    }
+
+    p{
+        font-size: medium;
+        margin: 10px auto 2px;
+    }
+    h2{
+        font-size: large;
+    }
+
+
+
 }
